@@ -178,6 +178,7 @@ dapr run --app-port 8080 --app-id transaction-service --app-protocol http --dapr
 - Consumes extra space for the sidecar runtime.
 - Debugging can be hard if sidecar is misconfigured.
 - May feel over engineered for small application.
+- If one service is down, then the message wont be sent and the record will be missed
 
 ### **Best Practices**
 - Use when
